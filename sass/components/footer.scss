@@ -1,0 +1,19 @@
+.footer {
+  padding: 10px;
+
+  @media(min-width: 1100px) {
+    padding: 20px 95px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+}

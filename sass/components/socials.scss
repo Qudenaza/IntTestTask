@@ -1,0 +1,26 @@
+.socials {
+  list-style: none;
+
+  &__link {
+    display: block;
+    width: 34px;
+    height: 34px;
+
+    transition: opacity 0.3s ease;
+
+    &--insta {
+      margin-right: 28px;
+
+      background: url('../images/icon-instagram.svg') no-repeat;
+    }
+
+    &--vk {
+      background: url('../images/icon-vk.svg') no-repeat;
+    }
+
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}

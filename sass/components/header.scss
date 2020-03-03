@@ -1,0 +1,188 @@
+.header {
+  padding-bottom: 20px;
+
+  background: url('../images/header-background-mobile.png') no-repeat;
+  background-size: 100% 50%;
+  overflow: hidden;
+
+  @media(min-width: 1100px) {
+    background: url('../images/header-background-desktop.png') no-repeat;
+    background-size: 100%;
+  }
+
+  &__promo {
+    margin-top: 70px;
+    padding: 0 10px;
+
+    @media(min-width: 1100px) {
+      padding: 0 95px;
+    }
+  }
+
+  &__col {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    text-transform: uppercase;
+    color: $color-white;
+
+    @media(min-width: 1100px) {
+      font-size: 90px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-white;
+
+
+    @media(min-width: 1100px) {
+      font-size: 50px;
+    }
+
+    & span {
+      color: $color-red;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 420px;
+
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: inherit;
+    font-weight: 700;
+    background: $color-red;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+
+
+    @media(min-width: 1100px) {
+      margin-top: 100px;
+      order: 2;
+
+      font-size: 19px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-dark;
+
+
+    @media(min-width: 1100px) {
+      font-size: 36px;
+      color: $color-white;
+    }
+
+    & span {
+      @media(min-width: 1100px) {
+        font-size: 24px;
+      }
+    }
+
+    &--active span {
+      display: block;
+      padding: 5px 10px;
+
+      font-size: 20px;
+      border-radius: 4px;
+      color: $color-white;
+      background: $color-red;
+
+
+      @media(min-width: 1100px) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 47px;
+    height: 47px;
+
+
+    @media(min-width: 1100px) {
+      width: 70px;
+      height: 70px;
+    }
+
+    &--first {
+      background: url('../images/icon-award.svg') no-repeat;
+      background-position: center;
+    }
+
+    &--second {
+      background: url('../images/icon-award-small.svg') no-repeat;
+      background-position: center;
+    }
+
+    &--third {
+      background: url('../images/icon-medal.svg') no-repeat;
+      background-position: center;
+    }
+
+    &--fourth {
+      background: url('../images/icon-award-small.svg') no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__flag {
+    width: 15px;
+    height: 15px;
+    margin: 0 13px 0 5px;
+
+
+    @media(min-width: 1100px) {
+      width: 22px;
+      height: 22px;
+      margin-right: 50px;
+    }
+
+    &--world {
+      background: url('../images/icon-world.svg') no-repeat;
+    }
+
+    &--eu {
+      background: url('../images/icon-flag-eu.svg') no-repeat;
+    }
+
+    &--russia {
+      background: url('../images/icon-flag-ru.svg') no-repeat;
+    }
+  }
+}
